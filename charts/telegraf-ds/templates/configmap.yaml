@@ -34,9 +34,6 @@ data:
     [[inputs.disk]]
     ignore_fs = ["tmpfs", "devtmpfs", "devfs", "iso9660", "overlay", "aufs", "squashfs"]
 
-    [[inputs.docker]]
-    endpoint = "unix:///var/run/docker.sock"
-
     [[inputs.kubernetes]]
     url = "https://$HOSTIP:10250"
     bearer_token = "/run/secrets/kubernetes.io/serviceaccount/token"
