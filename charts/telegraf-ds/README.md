@@ -1,4 +1,4 @@
-# Telegraf-DS (DaemonSet) Helm chart
+# Telegraf-DS (DaemonSet) Helm chart. No support to Docker Engine.
 
 [Telegraf](https://github.com/influxdata/telegraf) is a plugin-driven server agent used for collecting and reporting metrics. This chart runs a DaemonSet of Telegraf instances to collect host-level metrics for your cluster. To poll individual instances of infrastructure or APIs, use the [Telegraf chart](https://github.com/influxdata/helm-charts/tree/master/charts/telegraf).
 
