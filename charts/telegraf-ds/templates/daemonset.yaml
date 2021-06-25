@@ -49,8 +49,6 @@ spec:
         - name: procro
           mountPath: /rootfs/proc
           readOnly: true
-        - name: docker-socket
-          mountPath: /var/run/docker.sock
         - name: config
           mountPath: /etc/telegraf
       {{- with .Values.nodeSelector }}
@@ -69,9 +67,6 @@ spec:
       - name: sysro
         hostPath:
           path: /sys
-      - name: docker-socket
-        hostPath:
-          path: /var/run/docker.sock
       - name: procro
         hostPath:
           path: /proc
